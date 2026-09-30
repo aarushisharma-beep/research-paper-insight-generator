@@ -1,0 +1,10 @@
+services:
+  research-paper-insight-generator:
+    build: .
+    container_name: research-paper-insight-generator
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    environment:
+      INPUT_DIR: /app/input
+      OUTPUT_DIR: /app/output

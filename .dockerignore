@@ -1,0 +1,9 @@
+.venv
+.git
+__pycache__
+*.pyc
+input
+output
+Research_Paper_Insight_Generator_FINAL.ipynb
+research_paper_insights.csv
+
