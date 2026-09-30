@@ -1,35 +1,192 @@
 # Research Paper Insight Generator
 
-## Project Overview
-The Research Paper Insight Generator is an NLP-based tool designed to extract meaningful information from research paper PDFs. It aims to simplify the process of analysing research papers by converting unstructured text into structured insights.
+## 
 
-## Problem Statement
-Research papers contain valuable information, but manually reviewing multiple papers to identify their key findings, keywords, and summaries can be time-consuming. This project aims to automate parts of this process using open-source NLP tools.
+## 
 
-## Objectives
-- Extract text and metadata from research paper PDFs.
-- Identify abstracts and important keywords.
-- Generate concise, extractive summaries.
-- Organise extracted information into a structured dataset.
-- Enable further analysis of research papers.
+## \## 1. Project Overview
 
-## Tools & Technologies
-- Python
-- Google Colab
-- PyMuPDF
-- Pandas
-- Scikit-learn
-- Git and GitHub
+## 
 
-## Current Progress
-- PDF text extraction and basic text cleaning implemented.
-- Initial metadata extraction functions developed.
-- TF-IDF-based keyword extraction and extractive summarisation implemented.
-- Structured dataset created from an initial set of five research papers.
-- Metadata extraction accuracy and generalisation are still being improved.
+## The Research Paper Insight Generator is an automated pipeline that extracts useful information from research paper PDFs and converts it into a structured CSV dataset.
 
-## Project Status
-This project is currently under development as part of the Open Source Tools for Data Science course.
+## 
 
-## Team
-Developed as a two-member student project.
+## The project reduces the repetitive manual work involved in reading multiple research papers and collecting their basic information.
+
+## 
+
+## \## 2. Problem Statement
+
+## 
+
+## Research papers contain useful information such as titles, authors, abstracts, keywords and other textual content. Extracting and organising this information manually from multiple PDFs can be repetitive and time-consuming.
+
+## 
+
+## This project automates the extraction and processing of research papers into a structured dataset.
+
+## 
+
+## \## 3. Proposed Solution
+
+## 
+
+## The system takes research paper PDFs as input and processes them through a Python-based pipeline.
+
+## 
+
+## \### Pipeline
+
+## 
+
+## PDF Research Papers
+
+## &#x20;       ↓
+
+## Text Extraction
+
+## &#x20;       ↓
+
+## Text Cleaning
+
+## &#x20;       ↓
+
+## Metadata Extraction
+
+## &#x20;       ↓
+
+## Abstract Extraction
+
+## &#x20;       ↓
+
+## Extractive Summarisation
+
+## &#x20;       ↓
+
+## TF-IDF Keyword Extraction
+
+## &#x20;       ↓
+
+## Data Quality Checks
+
+## &#x20;       ↓
+
+## Structured CSV Dataset
+
+## 
+
+## \## 4. Features
+
+## 
+
+## The system extracts and generates:
+
+## 
+
+## \- Paper ID
+
+## \- File name
+
+## \- Title
+
+## \- Authors
+
+## \- Preprint date
+
+## \- Publication year
+
+## \- Abstract
+
+## \- Keywords
+
+## \- Number of pages
+
+## \- Word count
+
+## \- Extractive summary
+
+## \- TF-IDF keywords
+
+## 
+
+## The pipeline also performs basic data quality checks for:
+
+## 
+
+## \- Duplicate paper IDs
+
+## \- Empty abstracts
+
+## \- Empty summaries
+
+## 
+
+## \## 5. Technologies Used
+
+## 
+
+## \- Python
+
+## \- PyMuPDF
+
+## \- Pandas
+
+## \- Scikit-learn
+
+## \- Git
+
+## \- GitHub
+
+## \- Linux/open-source environment through Docker
+
+## \- Docker
+
+## \- Docker Compose
+
+## 
+
+## \## 6. Project Structure
+
+## 
+
+## ```text
+
+## research-paper-insight-generator/
+
+## │
+
+## ├── app/
+
+## │   └── main.py
+
+## │
+
+## ├── input/
+
+## │   └── Research paper PDFs
+
+## │
+
+## ├── output/
+
+## │   └── research\_paper\_insights.csv
+
+## │
+
+## ├── Research\_Paper\_Insight\_Generator\_FINAL.ipynb
+
+## ├── requirements.txt
+
+## ├── Dockerfile
+
+## ├── docker-compose.yml
+
+## ├── .dockerignore
+
+## ├── .gitignore
+
+## ├── README.md
+
+## └── LICENSE
+
